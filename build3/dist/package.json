@@ -1,6 +1,6 @@
 {
-  "name": "@angular-poc/module1",
-  "version": "0.0.0",
+  "name": "angular-poc-module1",
+  "version": "0.0.4",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -9,7 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:aot": "node_modules/.bin/ngc -p tsconfig-aot.json && cp -f package.json release"
+    "build:aot": "node_modules/.bin/ngc -p tsconfig-aot.json && cp -f package.json release",
+    "build2": "node_modules/.bin/ngc -p tsconfig-2.json && cp -f package.json release",
+    "build3": "node_modules/.bin/ngc -p src/app/exported-modules/tsconfig.json && cp -f package.json build3/dist"
   },
   "private": true,
   "dependencies": {

@@ -1,18 +1,8 @@
 {
-  "compileOnSave": false,
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "stripInternal": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "outDir": "dist",
-    "sourceMap": true,
     "declaration": true,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "skipLibCheck": true,
-    "target": "es5",
+    "outDir": "./release/dist",
     "paths":{
       "@angular/core":["node_modules/@angular/core"],
       "@angular/animations":["node_modules/@angular/animations"],
@@ -24,10 +14,16 @@
     },
     "typeRoots": [
       "node_modules/@types"
-    ],
-    "lib": [
-      "es2015",
-      "dom"
     ]
+  },
+  "files": [
+    "./src/app/exported-modules/index.ts"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "release",
+    "skipTemplateCodegen": true,
+    "entryModule": "index#Module1",
+    "skipMetadataEmit": false,
+    "strictMetadataEmit": true
   }
 }
