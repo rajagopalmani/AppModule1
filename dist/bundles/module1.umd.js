@@ -4,7 +4,7 @@
 	(factory((global.module1 = {}),global.ng.platformBrowser,global.ng.core,global.ng.router));
 }(this, (function (exports,platformBrowser,core,router) { 'use strict';
 
-var HelloComponent = /** @class */ (function () {
+var HelloComponent = (function () {
     function HelloComponent() {
     }
     /**
@@ -26,7 +26,7 @@ HelloComponent.ctorParameters = function () { return []; };
 var appRoutes = [
     { path: '', component: HelloComponent, pathMatch: 'full' }
 ];
-var AppModule1 = /** @class */ (function () {
+var AppModule1 = (function () {
     function AppModule1() {
     }
     return AppModule1;

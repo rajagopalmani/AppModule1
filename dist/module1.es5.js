@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { Component, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-var HelloComponent = /** @class */ (function () {
+var HelloComponent = (function () {
     function HelloComponent() {
     }
     /**
@@ -23,7 +23,7 @@ HelloComponent.ctorParameters = function () { return []; };
 var appRoutes = [
     { path: '', component: HelloComponent, pathMatch: 'full' }
 ];
-var AppModule1 = /** @class */ (function () {
+var AppModule1 = (function () {
     function AppModule1() {
     }
     return AppModule1;
